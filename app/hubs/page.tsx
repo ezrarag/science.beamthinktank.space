@@ -1,7 +1,7 @@
 'use client'
 
 import { useState, useEffect } from 'react'
-import { MapPin, Globe, Mail, Building, University, FlaskConical } from 'lucide-react'
+import { MapPin, Globe, Mail, Building, GraduationCap, FlaskConical } from 'lucide-react'
 import { supabase, ScienceHub } from '@/lib/supabase'
 
 export default function HubsPage() {
@@ -45,7 +45,7 @@ export default function HubsPage() {
   const getHubTypeIcon = (type: string) => {
     switch (type) {
       case 'university':
-        return <University className="h-5 w-5 text-blue-600" />
+        return <GraduationCap className="h-5 w-5 text-blue-600" />
       case 'lab':
         return <FlaskConical className="h-5 w-5 text-green-600" />
       case 'research_center':
